@@ -1,3 +1,7 @@
 #anchorpane {
-    -fx-background-color: #ffcc99;
+    -fx-background-color: #ccffcc;
+}
+
+#define {
+    -fx-font-size: 20pt;
 }

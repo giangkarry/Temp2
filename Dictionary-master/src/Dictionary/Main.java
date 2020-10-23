@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -49,6 +50,9 @@ public class Main extends Application implements Initializable {
 
     @FXML TextField wordChange;
 
+    @FXML
+    private TextArea define;
+
 
 
     @Override
@@ -58,6 +62,8 @@ public class Main extends Application implements Initializable {
         primaryStage.setTitle("Dictionary");
         Scene scene = new Scene(root);
         scene.getStylesheets().add(this.getClass().getResource("main.css").toExternalForm());
+        Image dictionary = new Image("/Dictionary/images/dictionary.png");
+        primaryStage.getIcons().add(dictionary);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -95,7 +101,7 @@ public class Main extends Application implements Initializable {
 
     // label
     public void showText(String s) {
-        label.setText(s);
+        define.setText(s);
     }
 
     // search with character
@@ -198,7 +204,7 @@ public class Main extends Application implements Initializable {
                 break;
             }
         }
-        label.setText(explain);
+        define.setText(explain);
         app.dicManage.dictionaryExportToFile();//update file.
         wordChange.setText("");//xóa Text Change.
     }

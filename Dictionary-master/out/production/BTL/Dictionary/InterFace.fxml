@@ -2,6 +2,7 @@
 
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <?scenebuilder-background-color 0x99c2ffff?>
@@ -16,32 +17,58 @@
     </Button>
     <ListView fx:id="wordView" layoutX="21.0" layoutY="74.0" onMouseClicked="#getSelection" prefHeight="564.0" prefWidth="294.0" />
     <TextField fx:id="textSearch" layoutX="21.0" layoutY="25.0" onKeyPressed="#searching" prefHeight="38.999900000002526" prefWidth="548.0" />
-    <Label fx:id="label" layoutX="329.0" layoutY="181.0" prefHeight="59.0" prefWidth="361.0" text="" />
-    <Button fx:id="add" font="$x2" layoutX="337.0" layoutY="559.0" mnemonicParsing="false" onAction="#setButtonAdd" prefHeight="39.0" prefWidth="96.0001220703125" text="Add" />
-    <Button fx:id="delete" font="$x2" layoutX="447.0" layoutY="558.0" mnemonicParsing="false" onAction="#setButtonDelete" prefHeight="39.0" prefWidth="105.0" text="Delete" />
-    <Button fx:id="change" layoutX="572.0" layoutY="559.0" mnemonicParsing="false" onAction="#pressChange" prefHeight="39.0" prefWidth="105.0" text="Change">
+    <Button fx:id="add" font="$x2" layoutX="365.0" layoutY="577.0" minHeight="52.0" minWidth="61.0" mnemonicParsing="false" onAction="#setButtonAdd" prefHeight="52.0" prefWidth="61.0" text="">
+      <graphic>
+        <ImageView fitHeight="75.0" fitWidth="100.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/Add.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="delete" font="$x2" layoutX="476.0" layoutY="577.0" minHeight="52.0" minWidth="68.0" mnemonicParsing="false" onAction="#setButtonDelete" prefHeight="52.0" prefWidth="68.0" text="">
+      <graphic>
+        <ImageView fitHeight="45.0" fitWidth="45.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/rubbish.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="change" layoutX="595.0" layoutY="577.0" minHeight="44.9998779296875" minWidth="60.9998779296875" mnemonicParsing="false" onAction="#pressChange" prefHeight="52.0" prefWidth="61.000099999997474" text="">
       <font>
         <Font name="Bell MT Bold" size="20.0" />
       </font>
+      <graphic>
+        <ImageView fitHeight="42.0" fitWidth="42.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/setting.png" />
+          </image>
+        </ImageView>
+      </graphic>
     </Button>
-    <TextField fx:id="wordAdd" layoutX="421.0" layoutY="353.0" prefHeight="39.0" prefWidth="263.9998779296875" />
-    <TextField fx:id="wordMean" layoutX="421.0" layoutY="411.0" prefHeight="39.0" prefWidth="264.0" />
-    <Label layoutX="337.0" layoutY="353.0" prefHeight="39.0" prefWidth="68.0" text="Word:">
+    <TextField fx:id="wordAdd" layoutX="426.0" layoutY="385.0" prefHeight="39.0" prefWidth="263.9998779296875" />
+    <TextField fx:id="wordMean" layoutX="426.0" layoutY="448.0" prefHeight="39.0" prefWidth="264.0" />
+    <Label layoutX="338.0" layoutY="385.0" prefHeight="39.0" prefWidth="68.0" text="Word:">
       <font>
-        <Font name="System Bold" size="20.0" fx:id="x1" />
+        <Font name="System Bold" size="17.0" fx:id="x1" />
       </font>
     </Label>
-    <Label font="$x1" layoutX="337.0" layoutY="411.0" prefHeight="39.0" prefWidth="68.0" text="Mean:" />
-    <TextField id="workChange" fx:id="wordChange" layoutX="421.0" layoutY="484.0" prefHeight="38.999900000002526" prefWidth="264.0" />
-    <Label layoutX="337.0" layoutY="484.0" minHeight="14.9998779296875" prefHeight="39.0" prefWidth="68.0" text="Change:">
-      <font>
-        <Font name="Bell MT Bold" size="18.0" fx:id="x3" />
-      </font>
-    </Label>
-    <Button fx:id="sound" layoutX="329.0" layoutY="90.0" mnemonicParsing="false" onAction="#setButtonSound" prefHeight="35.0" prefWidth="76.0" text="Sound">
+    <Label font="$x1" layoutX="338.0" layoutY="448.0" prefHeight="39.0" prefWidth="68.0" text="Mean:" />
+    <TextField id="workChange" fx:id="wordChange" layoutX="426.0" layoutY="504.0" prefHeight="38.999900000002526" prefWidth="264.0" />
+    <Label font="$x1" layoutX="337.0" layoutY="504.0" minHeight="14.9998779296875" prefHeight="39.0" prefWidth="68.0" text="Change:" />
+    <Button fx:id="sound" layoutX="330.0" layoutY="82.0" minHeight="42.0" minWidth="42.0" mnemonicParsing="false" onAction="#setButtonSound" prefHeight="42.0" prefWidth="42.0" text="">
       <font>
         <Font size="16.0" />
       </font>
+      <graphic>
+        <ImageView fitHeight="52.0" fitWidth="52.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/sound.png" />
+          </image>
+        </ImageView>
+      </graphic>
     </Button>
+    <TextArea fx:id="define" layoutX="365.0" layoutY="181.0" prefHeight="65.0" prefWidth="306.0" wrapText="true" />
   </children>
 </AnchorPane>

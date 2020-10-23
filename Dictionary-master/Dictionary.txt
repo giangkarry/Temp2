@@ -2036,7 +2036,6 @@ gun	súng
 gut	ruột
 guy	chàng
 gym	phòng thể dục
-ha	ha
 habit	thói quen
 habitat	môi trường sống
 hair	tóc

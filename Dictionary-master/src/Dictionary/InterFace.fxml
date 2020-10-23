@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0x99c2ffff?>
+<?scenebuilder-stylesheet main.css?>
+
+<AnchorPane id="anchorpane" prefHeight="659.0" prefWidth="704.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Dictionary.Main">
+  <children>
+    <Button fx:id="buttonSearch" layoutX="580.0" layoutY="25.0" mnemonicParsing="false" onAction="#pressSearch" prefHeight="39.0" prefWidth="105.0" text="Search">
+      <font>
+        <Font name="Bell MT Bold" size="22.0" fx:id="x2" />
+      </font>
+    </Button>
+    <ListView fx:id="wordView" layoutX="21.0" layoutY="74.0" onMouseClicked="#getSelection" prefHeight="564.0" prefWidth="294.0" />
+    <TextField fx:id="textSearch" layoutX="21.0" layoutY="25.0" onKeyPressed="#searching" prefHeight="38.999900000002526" prefWidth="548.0" />
+    <Label fx:id="label" layoutX="329.0" layoutY="181.0" prefHeight="59.0" prefWidth="361.0" text="" />
+    <Button fx:id="add" font="$x2" layoutX="337.0" layoutY="559.0" mnemonicParsing="false" onAction="#setButtonAdd" prefHeight="39.0" prefWidth="96.0001220703125" text="Add" />
+    <Button fx:id="delete" font="$x2" layoutX="447.0" layoutY="558.0" mnemonicParsing="false" onAction="#setButtonDelete" prefHeight="39.0" prefWidth="105.0" text="Delete" />
+    <Button fx:id="change" layoutX="572.0" layoutY="559.0" mnemonicParsing="false" onAction="#pressChange" prefHeight="39.0" prefWidth="105.0" text="Change">
+      <font>
+        <Font name="Bell MT Bold" size="20.0" />
+      </font>
+    </Button>
+    <TextField fx:id="wordAdd" layoutX="421.0" layoutY="353.0" prefHeight="39.0" prefWidth="263.9998779296875" />
+    <TextField fx:id="wordMean" layoutX="421.0" layoutY="411.0" prefHeight="39.0" prefWidth="264.0" />
+    <Label layoutX="337.0" layoutY="353.0" prefHeight="39.0" prefWidth="68.0" text="Word:">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="337.0" layoutY="411.0" prefHeight="39.0" prefWidth="68.0" text="Mean:" />
+    <TextField id="workChange" fx:id="wordChange" layoutX="421.0" layoutY="484.0" prefHeight="38.999900000002526" prefWidth="264.0" />
+    <Label layoutX="337.0" layoutY="484.0" minHeight="14.9998779296875" prefHeight="39.0" prefWidth="68.0" text="Change:">
+      <font>
+        <Font name="Bell MT Bold" size="18.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Button fx:id="sound" layoutX="329.0" layoutY="90.0" mnemonicParsing="false" onAction="#setButtonSound" prefHeight="35.0" prefWidth="76.0" text="Sound">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
